@@ -369,9 +369,9 @@ img {
   font-size: 0;
   visibility: hidden;
 }
-.goals-content {
+/*.goals-content {
   max-width: 270px;
-}
+}*/
 .goals-picture {
   display: flex;
 
@@ -393,7 +393,7 @@ img {
   margin: 0 auto;
 }
 
-.goals-title {
+.goals__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
