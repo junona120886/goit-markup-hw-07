@@ -5,6 +5,9 @@
 
   border-bottom: 1px solid #ececec;
 }
+.header__logo {
+  margin-right: 95px;
+}
 .navigation-list {
   display: flex;
   width: 100%;
@@ -39,7 +42,7 @@
 .navigation__link--current::after {
   content: "";
   position: absolute;
-  bottom: -34px;
+  bottom: -33px;
   left: 0;
   width: 100%;
   border: 2px solid $accent-color;
