@@ -1,7 +1,5 @@
 .team {
   background-color: $secondary-background-color;
-  padding-top: 5.94rem;
-  padding-bottom: 5.94rem;
 }
 .team-list {
   display: flex;
@@ -65,7 +63,7 @@
   height: 2.75rem;
   border-radius: 50%;
   background-color: $primary-white;
-  color: $icon-primary-text-color;
+  color: $icon-primary-color;
 
   transition-property: background-color, color;
   transition-duration: 250ms;
