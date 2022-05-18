@@ -1,0 +1,43 @@
+.about {
+  padding-bottom: 5.94rem;
+}
+.about__list {
+  display: flex;
+}
+.about__item {
+  flex-basis: calc(100% / 3-1.875rem);
+}
+.about__item:not(:last-child) {
+  margin-right: 1.875rem;
+}
+.about__link {
+  position: relative;
+}
+.about__image {
+  display: block;
+  width: 100%;
+}
+.about__title-block {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+
+  width: 100%;
+  min-height: 70px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: $about-title-block-color;
+}
+.about__title {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white;
+}
