@@ -1,13 +1,13 @@
 .about {
   padding-bottom: 5.94rem;
 }
-.about__list {
+.about-list {
   display: flex;
 }
-.about__item {
+.about-list__item {
   flex-basis: calc(100% / 3-1.875rem);
 }
-.about__item:not(:last-child) {
+.about-list__item:not(:last-child) {
   margin-right: 1.875rem;
 }
 .about__link {
