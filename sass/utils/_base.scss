@@ -28,7 +28,7 @@
   display: block;
   justify-content: center;
 
-  padding: 0.625rem;
+  padding: 0.625rem 1.375rem;
 
   border-radius: 0.25rem;
   border-style: none;
@@ -81,10 +81,26 @@
     background-color: $button-hover-color;
   }
 }
+.button-base--filter {
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0rem 0.125rem 0.125rem rgba(0, 0, 0, 0.12),
+      0rem 0.062rem 0.125rem rgba(0, 0, 0, 0.08),
+      0rem 0.187rem 0.062rem rgba(0, 0, 0, 0.1);
+  }
+}
 .button-base--mailing {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.button-base--filter {
+  padding-left: 1.375rem;
+  padding-right: 1.375rem;
 }
 .logo {
   display: inline-block;
@@ -115,10 +131,11 @@
 }
 .social-list__item {
   flex-basis: calc(100% / 4-0.625rem);
+  &:not(:last-child) {
+    margin-right: 0.625rem;
+  }
 }
-.social-list__item:not(:last-child) {
-  margin-right: 0.625rem;
-}
+
 .social-list__link {
   display: block;
   width: 2.75rem;
