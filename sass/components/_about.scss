@@ -6,9 +6,10 @@
 }
 .about-list__item {
   flex-basis: calc(100% / 3-1.875rem);
-}
-.about-list__item:not(:last-child) {
-  margin-right: 1.875rem;
+
+  &:not(:last-child) {
+    margin-right: 1.875rem;
+  }
 }
 .about__link {
   position: relative;
@@ -24,7 +25,7 @@
   margin: 0;
 
   width: 100%;
-  min-height: 70px;
+  min-height: 4.375rem;
 
   justify-content: center;
   align-items: center;

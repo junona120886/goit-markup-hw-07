@@ -1,69 +1,65 @@
 .main-container {
-  width: 1200px;
+  width: 75rem;
 
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0.937rem;
+  padding-right: 0.937rem;
 
   margin-left: auto;
   margin-right: auto;
-
-  outline: 1px solid red;
 }
 .flex-container {
   display: flex;
   align-items: center;
-
-  outline: 1px solid red;
 }
 .section {
   padding-top: 5.875rem;
   padding-bottom: 5.875rem;
 }
 .section-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
 }
 .section-title--margins {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
-/*button for portfoio filter*/
 .button-base {
   display: block;
   justify-content: center;
 
   padding: 0.625rem;
 
-  border-radius: 4px;
+  border-radius: 0.25rem;
   border-style: none;
 
   background-color: $button-base-color;
   color: $button-text-color;
   font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+    color: $primary-white;
+  }
+  &:active {
+    background-color: $button-active-color;
+    color: $primary-white;
+  }
 }
 .button-base--decoration {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-base:hover,
-.button-base:focus {
-  background-color: $button-hover-color;
-  color: $primary-white;
-}
-.button-base:active {
-  background-color: $button-active-color;
-  color: $primary-white;
-}
 .button-base--primary {
-  width: 200px;
-  height: 50px;
+  width: 12.5rem;
+  height: 3.125rem;
 
   margin-left: auto;
   margin-right: auto;
@@ -74,40 +70,78 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
 
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
 }
-.button-base--primary:hover,
-.button-base--primary:focus {
-  background-color: $button-hover-color;
+.button-base--mailing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo {
   display: inline-block;
 
-  color: #000;
-  font-family: Raleway;
+  color: $logo-color;
+  font-family: $logo-font;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 .logo-accent {
-  color: $accent-color;
+  color: $logo-accent-color;
 }
 .icon {
   display: block;
   fill: currentColor;
 }
 .contacts-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.625rem;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list__item {
+  flex-basis: calc(100% / 4-0.625rem);
+}
+.social-list__item:not(:last-child) {
+  margin-right: 0.625rem;
+}
+.social-list__link {
+  display: block;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: $primary-white;
+  color: $icon-primary-color;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white;
+  }
+}
+.social-list__link--footer {
+  background-color: $icon-footer-background-color;
+  color: $primary-white;
 }
 .social-icon {
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: 2.75rem;
 }

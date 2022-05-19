@@ -16,9 +16,10 @@
 .goals__item {
   flex-basis: calc(100% / 4-1.875rem);
   padding-right: 0.25rem;
-}
-.goals__item:not(:last-child) {
-  margin-right: 1.875rem;
+
+  &:not(:last-child) {
+    margin-right: 1.875rem;
+  }
 }
 .goals__picture {
   display: flex;
